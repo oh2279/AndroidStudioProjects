@@ -33,6 +33,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/nextbtn"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/next"

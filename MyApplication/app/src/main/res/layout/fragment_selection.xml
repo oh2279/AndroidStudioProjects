@@ -54,6 +54,7 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/backbtn"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/previous"

@@ -1,11 +1,13 @@
 package com.example.myapplication.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
 import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentResultBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,13 +31,45 @@ class ResultFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+    var option = -1
+    lateinit var navController: NavController
+
+    // id가져오려면 추가해야할 것 들
+    private var mBinding: FragmentResultBinding? = null
+    private val binding get() = mBinding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_result, container, false)
+
+        option = arguments?.getInt("index")?:-1
+        mBinding = FragmentResultBinding.inflate(inflater, container, false)  // binding위해 추가할 것
+
+        return binding.root // 또한 마찬가지
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setResult(option)
+
+        binding.home.setOnClickListener{
+            navController.navigate(R.id.action_resultFragment_to_mainFragment)
+        }
+    }
+
+    fun setResult(option : Int){
+        when(option){
+            1 -> {
+                binding.testResult.text="E"
+                binding.subResult.text="외향적"
+            }
+            2 -> {
+                binding.testResult.text="I"
+                binding.subResult.text="내향적"
+            }
+        }
     }
 
     companion object {
