@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import com.example.myapplication.R
+import com.example.myapplication.*
 import com.example.myapplication.databinding.FragmentResultBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -41,7 +41,7 @@ class ResultFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
 
         option = arguments?.getInt("index")?:-1
@@ -52,25 +52,40 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setResult(option)
-
-        binding.home.setOnClickListener{
-            navController.navigate(R.id.action_resultFragment_to_mainFragment)
-        }
+        setResult()
     }
 
-    fun setResult(option : Int){
-        when(option){
-            1 -> {
-                binding.testResult.text="E"
-                binding.subResult.text="외향적"
-            }
-            2 -> {
-                binding.testResult.text="I"
-                binding.subResult.text="내향적"
-            }
+    fun setResult(){
+        var mbtiResult = ""
+        if(E_count > I_count){
+            mbtiResult += "E"
         }
+        else if(E_count < I_count){
+            mbtiResult += "I"
+        }
+        if(S_count > N_count){
+            mbtiResult += "S"
+        }
+        else if(S_count < N_count){
+            mbtiResult += "N"
+        }
+        if(T_count > F_count){
+            mbtiResult += "T"
+        }
+        else if(T_count < F_count){
+            mbtiResult += "F"
+        }
+        if(J_count > P_count){
+            mbtiResult += "J"
+        }
+        else if(J_count < P_count){
+            mbtiResult += "P"
+        }
+
+        binding.testResult.text = mbtiResult
+
     }
+
 
     companion object {
         /**

@@ -45,11 +45,11 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         mBinding = FragmentMainBinding.inflate(inflater, container, false)  // binding위해 추가할 것
 
-        return binding.root // 또한 마찬가지
+        return binding.root /* 또한 마찬가지 */
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -58,7 +58,7 @@ class MainFragment : Fragment() {
         navController = Navigation.findNavController(view)
 
         binding.nextbtn.setOnClickListener{
-            navController.navigate(R.id.action_mainFragment_to_questionFragment)
+            navController.navigate(R.id.action_mainFragment_to_selectionFragment)
         }
     }
 

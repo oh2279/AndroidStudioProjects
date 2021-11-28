@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.myapplication.E_count
-import com.example.myapplication.I_count
+import com.example.myapplication.N_count
 import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentSelectionBinding
+import com.example.myapplication.S_count
+import com.example.myapplication.databinding.FragmentSelection4Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [SelectionFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class SelectionFragment : Fragment(), View.OnClickListener {
+class Selection4Fragment : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -32,7 +32,7 @@ class SelectionFragment : Fragment(), View.OnClickListener {
     lateinit var navController : NavController
 
     // id가져오려면 추가해야할 것 들
-    private var mBinding: FragmentSelectionBinding? = null
+    private var mBinding: FragmentSelection4Binding? = null
     private val binding get() = mBinding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,14 +41,13 @@ class SelectionFragment : Fragment(), View.OnClickListener {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        mBinding = FragmentSelectionBinding.inflate(inflater, container, false)  // binding위해 추가할 것
+    ): View {
+        mBinding = FragmentSelection4Binding.inflate(inflater, container, false)  // binding위해 추가할 것
 
         return binding.root // 또한 마찬가지
     }
@@ -58,10 +57,8 @@ class SelectionFragment : Fragment(), View.OnClickListener {
 
         navController= Navigation.findNavController(view)
 
-        binding.optionE.setOnClickListener(this)
-        binding.optionI.setOnClickListener(this)
-
-
+        binding.option4S.setOnClickListener(this)
+        binding.option4N.setOnClickListener(this)
     }
 
     companion object {
@@ -87,21 +84,19 @@ class SelectionFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
 
         when(v?.id){
-            R.id.option_e -> {navigateWithIndex('e')}
-            R.id.option_i -> {navigateWithIndex('i')}
-            /*R.id.backbtn -> {
-                navController.popBackStack()
-            }*/
+            R.id.option4_s -> {navigateWithIndex('s')}
+            R.id.option4_n -> {navigateWithIndex('n')}
+
         }
     }
-    fun navigateWithIndex(count: Char){
+    fun Selection4Fragment.navigateWithIndex(count: Char){
         val buf : Char = count
-        if (buf == 'e'){
-            E_count++
+        if (buf == 's'){
+            S_count++
         }
         else{
-            I_count++
+            N_count++
         }
-        navController.navigate(R.id.action_selectionFragment_to_selection2Fragment2)
+        navController.navigate(R.id.action_selection4Fragment_to_selection5Fragment)
     }
 }

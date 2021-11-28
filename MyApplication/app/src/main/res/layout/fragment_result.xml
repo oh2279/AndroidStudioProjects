@@ -10,6 +10,16 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 유형은...\n"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/testResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/testResult"
         android:textColor="@color/black"
         android:fontFamily="sans-serif-black"
@@ -17,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
-        android:text="당신의 유형은...\n ESTJ!"
+        android:text=""
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +40,7 @@
         android:layout_marginBottom="332dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="#현실 #실용 #화끈 #규칙 \n #부지런 #일잘러"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SelectionFragment">
+    tools:context=".fragment.Selection3Fragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <ImageView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/progress1"
+        android:src="@drawable/progress3"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -21,11 +20,10 @@
         />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="410dp"
         android:layout_height="300dp"
         android:gravity="center"
-        android:text="Q1"
+        android:text="Q3"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,9 +35,9 @@
         android:layout_marginTop="224dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="나는 직장이나 단체에서"
+        android:text="나는 모임에 참석하여 주로"
         android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +55,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/option_e"
+            android:id="@+id/option3_i"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
@@ -65,18 +63,18 @@
             android:layout_weight="1"
             android:background="@drawable/selection"
             android:gravity="center"
-            android:text="대화를 주도한다"
+            android:text="적당한 시간이 지나면 그만 끝냈으면 한다"
             android:textSize="40sp" />
 
         <TextView
-            android:id="@+id/option_i"
+            android:id="@+id/option3_e"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/selection"
             android:gravity="center"
-            android:text="누군가 말할 때까지 기다린다"
+            android:text="점점 신이 나서 거의 끝까지 남는 편이다"
             android:textSize="40sp" />
 
     </LinearLayout>

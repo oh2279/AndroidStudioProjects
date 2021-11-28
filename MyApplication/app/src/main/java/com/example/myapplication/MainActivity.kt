@@ -1,9 +1,17 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.NavController
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+
+var E_count =0
+var I_count=0
+var S_count =0
+var N_count=0
+var T_count =0
+var F_count=0
+var J_count =0
+var P_count=0
 
 class MainActivity : AppCompatActivity() {
     // lateinit var navController :NavController

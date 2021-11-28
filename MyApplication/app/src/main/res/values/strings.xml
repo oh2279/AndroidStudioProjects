@@ -2,7 +2,7 @@
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="main_title">MBTI_TEST</string>
-    <string name="question">나는 직장이나 단체에서?</string>
-    <string name="question_e">대화를 주도한다</string>
-    <string name="question_i">누군가 먼저 말하기를 기다린다</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
