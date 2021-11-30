@@ -79,14 +79,6 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/backbtn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/previous"
-        app:layout_constraintTop_toBottomOf="@id/guideline"
-        app:layout_constraintStart_toStartOf="parent"/>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"

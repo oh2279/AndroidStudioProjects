@@ -87,9 +87,7 @@ class Selection6Fragment : Fragment(), View.OnClickListener {
         when(v?.id){
             R.id.option6_s -> {navigateWithIndex('s')}
             R.id.option6_n -> {navigateWithIndex('n')}
-            R.id.backbtn -> {
-                navController.popBackStack()
-            }
+
         }
     }
     fun Selection6Fragment.navigateWithIndex(count: Char){
