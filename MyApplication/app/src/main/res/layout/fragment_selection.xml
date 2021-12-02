@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SelectionFragment">
+    tools:context=".fragment.SelectionFragment"
+    android:background="@color/cardview_dark_background">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageView
-        android:layout_width="300dp"
+
+    <ProgressBar
+
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/progress1"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        />
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.2"
+        android:max="12"
+        android:progress="1"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -26,6 +29,7 @@
         android:layout_height="300dp"
         android:gravity="center"
         android:text="Q1"
+        android:textColor="@color/white"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,11 +42,12 @@
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="나는 직장이나 단체에서"
-        android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -63,10 +68,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/selection"
             android:gravity="center"
             android:text="대화를 주도한다"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            android:background="@drawable/custom_btn"/>
 
         <TextView
             android:id="@+id/option_i"
@@ -74,7 +79,7 @@
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/selection"
+            android:background="@drawable/custom_btn"
             android:gravity="center"
             android:text="누군가 말할 때까지 기다린다"
             android:textSize="40sp" />

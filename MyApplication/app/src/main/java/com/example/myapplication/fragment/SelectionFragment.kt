@@ -83,15 +83,13 @@ class SelectionFragment : Fragment(), View.OnClickListener {
                 }
             }
     }
-
+    // 다른 selectionFragment들과 동일한 기능을 하는 함수
     override fun onClick(v: View?) {
 
         when(v?.id){
             R.id.option_e -> {navigateWithIndex('e')}
             R.id.option_i -> {navigateWithIndex('i')}
-            /*R.id.backbtn -> {
-                navController.popBackStack()
-            }*/
+
         }
     }
     fun navigateWithIndex(count: Char){

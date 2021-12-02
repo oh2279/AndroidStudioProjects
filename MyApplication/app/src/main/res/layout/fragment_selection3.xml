@@ -4,26 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Selection3Fragment">
+    tools:context=".fragment.Selection3Fragment"
+    android:background="@color/cardview_dark_background">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/progress3"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        />
+
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="410dp"
         android:layout_height="300dp"
         android:gravity="center"
         android:text="Q3"
+        android:textColor="@color/white"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,8 +29,9 @@
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="나는 모임에 참석하여 주로"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,7 +55,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/selection"
+            android:background="@drawable/custom_btn"
             android:gravity="center"
             android:text="적당한 시간이 지나면 그만 끝냈으면 한다"
             android:textSize="40sp" />
@@ -72,7 +66,7 @@
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/selection"
+            android:background="@drawable/custom_btn"
             android:gravity="center"
             android:text="점점 신이 나서 거의 끝까지 남는 편이다"
             android:textSize="40sp" />

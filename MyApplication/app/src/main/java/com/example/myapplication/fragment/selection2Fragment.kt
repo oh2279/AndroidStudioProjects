@@ -25,6 +25,8 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class Selection2Fragment : Fragment(), View.OnClickListener {
+
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -80,16 +82,17 @@ class Selection2Fragment : Fragment(), View.OnClickListener {
                 }
             }
     }
-
+    // 어떤 view가 클릭 됐을 때 실행되는 함수
     override fun onClick(v: View?) {
-
+        // 클릭된 것들(view)의 id가 null이 아니면
+        // navigateWithIndex함수 실행(파라미터도 같이 넘겨주면서)
         when(v?.id){
             R.id.option2_e -> {navigateWithIndex('e')}
             R.id.option2_i -> {navigateWithIndex('i')}
         }
     }
 }
-
+    // selection2의 navigateWithIndex함수
     fun Selection2Fragment.navigateWithIndex(count: Char){
             val buf : Char = count
             if (buf == 'e'){

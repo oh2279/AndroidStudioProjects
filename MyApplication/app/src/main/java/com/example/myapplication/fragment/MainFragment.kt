@@ -20,12 +20,16 @@ private const val ARG_PARAM2 = "param2"
  * Use the [MainFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
+
+
 class MainFragment : Fragment() {
+
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var navController : NavController
+    lateinit var navController : NavController // navController를 나중에 쓸 것이므로 lateinit 선언
 
     // id가져오려면 추가해야할 것 들
     // 바인딩이름 변경 필수
@@ -51,7 +55,8 @@ class MainFragment : Fragment() {
 
         return binding.root /* 또한 마찬가지 */
     }
-
+    
+    // 다음 fragment로 넘어가기 위한 함수 ->navigation 이용
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -83,3 +88,4 @@ class MainFragment : Fragment() {
             }
     }
 }
+

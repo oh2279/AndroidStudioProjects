@@ -22,7 +22,11 @@
         android:id="@+id/resultFragment"
         android:name="com.example.myapplication.fragment.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_dialogFragment2"
+            app:destination="@id/dialogFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/selectionFragment"
         android:name="com.example.myapplication.fragment.SelectionFragment"
@@ -131,4 +135,9 @@
             android:id="@+id/action_selection9Fragment_to_selection10Fragment"
             app:destination="@id/selection10Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/dialogFragment2"
+        android:name="com.example.myapplication.fragment.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" />
 </navigation>

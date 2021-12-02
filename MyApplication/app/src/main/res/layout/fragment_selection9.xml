@@ -4,27 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Selection9Fragment">
+    tools:context=".fragment.Selection9Fragment"
+    android:background="@color/cardview_dark_background">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/progress9"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        />
+
 
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="410dp"
         android:layout_height="300dp"
         android:gravity="center"
         android:text="Q9"
+        android:textColor="@color/white"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +30,9 @@
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="남의 문제를 해결해 줄 때, 흥미를 느끼는 쪽은"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +57,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/selection"
+            android:background="@drawable/custom_btn"
             android:gravity="center"
             android:text="어떤 선물을 고를까 하는 고민을 해결해 줄 때"
             android:textSize="40sp" />
@@ -74,7 +68,7 @@
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/selection"
+            android:background="@drawable/custom_btn"
             android:gravity="center"
             android:text="세금의 부당한 청구를 해결해 줄 때"
             android:textSize="40sp" />

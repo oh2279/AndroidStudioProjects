@@ -56,7 +56,8 @@ class Selection4Fragment : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         navController= Navigation.findNavController(view)
-
+        
+        // this의 setOnClickListner를 쓰겠다는 의미
         binding.option4S.setOnClickListener(this)
         binding.option4N.setOnClickListener(this)
     }
@@ -89,6 +90,8 @@ class Selection4Fragment : Fragment(), View.OnClickListener {
 
         }
     }
+
+    // 다른 selectionFragment들과 동일한 기능을 하는 함수
     fun Selection4Fragment.navigateWithIndex(count: Char){
         val buf : Char = count
         if (buf == 's'){

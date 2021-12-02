@@ -81,6 +81,7 @@ class Selection9Fragment : Fragment(), View.OnClickListener {
             }
     }
 
+    // 다른 selectionFragment들과 동일한 기능을 하는 함수
     override fun onClick(v: View?) {
 
         when(v?.id){
