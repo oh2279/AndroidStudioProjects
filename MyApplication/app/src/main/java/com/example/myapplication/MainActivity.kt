@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 
 // mbti테스트를 위한 count
@@ -17,10 +18,9 @@ var J_count =0
 var P_count=0
 
 class MainActivity : AppCompatActivity() {
-    // lateinit var navController :NavController
+    lateinit var navController : NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 

@@ -78,9 +78,13 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setResult()
-        nbinding.ending.setOnClickListener {
-            navController.navigate(R.id.action_resultFragment_to_dialogFragment2)
+        nbinding.ending.setOnClickListener{
+            val dialog = CustomDialog()
+            activity?.supportFragmentManager?.let{
+                fragmentManager ->
+                dialog.show(fragmentManager,"CustomDialog")
             }
+        }
     }
     
     // 각 count 개수 비교하여 mbti 출력

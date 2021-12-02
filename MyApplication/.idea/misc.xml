@@ -7,9 +7,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/custom_btn.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/dialog_layout.xml" value="0.559304366378929" />
         <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_dialog.xml" value="0.559304366378929" />
         <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_main.xml" value="0.175" />
-        <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_result.xml" value="0.2754782700075322" />
+        <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_result.xml" value="0.18365218000502148" />
         <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_selection.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/Beomseok/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_selection3.xml" value="0.14270833333333333" />
       </map>
