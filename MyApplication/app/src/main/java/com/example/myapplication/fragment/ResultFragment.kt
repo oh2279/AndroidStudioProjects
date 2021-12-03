@@ -28,8 +28,8 @@ class ResultFragment : Fragment() {
     lateinit var navController: NavController
 
     // id가져오려면 추가해야할 것 들
-    private var NBinding: FragmentResultBinding? = null
-    private val nbinding get() = NBinding!!
+    private var mBinding: FragmentResultBinding? = null
+    private val nbinding get() = mBinding!!
 
 
     // TODO: Rename and change types of parameters
@@ -70,7 +70,7 @@ class ResultFragment : Fragment() {
         // arguments가 null이 아니면 getInt 실행하고
         // 앨비스 연산자를 이용하여 getInt마저도 null이면 -1값을 줌
         option = arguments?.getInt("index")?:-1
-        NBinding = FragmentResultBinding.inflate(inflater, container, false)  // binding위해 추가할 것
+        mBinding = FragmentResultBinding.inflate(inflater, container, false)  // binding위해 추가할 것
 
         return nbinding.root // 또한 마찬가지
     }
@@ -78,6 +78,8 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setResult()
+
+        // 종료버튼 클릭시 CustomDialog를 show
         nbinding.ending.setOnClickListener{
             val dialog = CustomDialog()
             activity?.supportFragmentManager?.let{

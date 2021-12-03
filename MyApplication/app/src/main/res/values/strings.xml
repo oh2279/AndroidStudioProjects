@@ -3,18 +3,21 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="main_title">MBTI 유형테스트</string>
     <string name="sub_title">당신의 유형은?</string>
-
+    <string name="ending">종료</string>
+    <string name="tail">입니다!!</string>
+    <string name="head">당신은...</string>
+    <string name="detailresult">자세한 결과를 확인하세요</string>
     <string name="estj">#현실 #실용 #규칙 #부지런 #일잘러 \n\n
 
-            -화끈하고 솔직하며 직설적이다
-            -혼자서 일하기 싫다
-            -논리적이고 분석적이어서 객관적인 판단을 중시한다
-            -규칙을 중요시 한다
-            -일을 추진함에 있어 게으름이란 없다
-            -주장이 강한 편이다
-            -사람 앞에 나서길 좋아한다
-            -고집이 있지만 논리적으로 자신의 잘못을 느끼면 수긍한다
-            -일을 굉장히 잘 하는 편이다
+            -화끈하고 솔직하며 직설적이다\n
+            -혼자서 일하기 싫다\n
+            -논리적이고 분석적이어서 객관적인 판단을 중시한다\n
+            -규칙을 중요시 한다\n
+            -일을 추진함에 있어 게으름이란 없다\n
+            -주장이 강한 편이다\n
+            -사람 앞에 나서길 좋아한다\n
+            -고집이 있지만 논리적으로 자신의 잘못을 느끼면 수긍한다\n
+            -일을 굉장히 잘 하는 편이다\n
         </string>
 
     <string name="estp">#활동 #다양 #농담 #센스 #합리화\n

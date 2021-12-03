@@ -48,6 +48,7 @@ class CustomDialog : DialogFragment() {
         // 레이아웃 배경을 투명하게
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
+        //버튼 클릭 됐을 때, 액티비티 finish
         binding.dialBtn1.setOnClickListener {
             activity?.finishAffinity()
             dismiss()
