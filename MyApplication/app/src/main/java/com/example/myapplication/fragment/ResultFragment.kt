@@ -16,11 +16,6 @@ import com.sothree.slidinguppanel.SlidingUpPanelLayout
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ResultFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ResultFragment : Fragment() {
     private lateinit var mbinding: FragmentResultBinding  // 뷰 바인딩
     // non-null type
@@ -173,14 +168,6 @@ class ResultFragment : Fragment() {
 
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ResultFragment.
-         */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
