@@ -60,7 +60,7 @@ class Selection4Fragment : Fragment(), View.OnClickListener {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             SelectionFragment().apply {
-                arguments = Bundle().apply {
+                var arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
