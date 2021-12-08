@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.myapplication.J_count
-import com.example.myapplication.P_count
+import com.example.myapplication.MainActivity.Companion.J_count
+import com.example.myapplication.MainActivity.Companion.P_count
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentSelection10Binding
 

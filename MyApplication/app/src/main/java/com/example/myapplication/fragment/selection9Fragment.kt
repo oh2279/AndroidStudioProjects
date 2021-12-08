@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.myapplication.F_count
+import com.example.myapplication.MainActivity.Companion.F_count
+import com.example.myapplication.MainActivity.Companion.T_count
 import com.example.myapplication.R
-import com.example.myapplication.T_count
 import com.example.myapplication.databinding.FragmentSelection9Binding
 
 // TODO: Rename parameter arguments, choose names that match

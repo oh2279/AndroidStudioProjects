@@ -13,10 +13,8 @@
         <action
             android:id="@+id/action_mainFragment_to_selectionFragment"
             app:destination="@id/selectionFragment"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:exitAnim="@anim/fragment_open_exit"
-            app:popEnterAnim="@anim/fragment_close_enter"
-            app:popExitAnim="@anim/fragment_close_exit" />
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -30,7 +28,9 @@
         tools:layout="@layout/fragment_selection" >
         <action
             android:id="@+id/action_selectionFragment_to_selection2Fragment2"
-            app:destination="@id/selection2Fragment2" />
+            app:destination="@id/selection2Fragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection2Fragment2"
@@ -39,7 +39,9 @@
         tools:layout="@layout/fragment_selection2" >
         <action
             android:id="@+id/action_selection2Fragment2_to_selection3Fragment2"
-            app:destination="@id/selection3Fragment2" />
+            app:destination="@id/selection3Fragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection3Fragment2"
@@ -48,7 +50,9 @@
         tools:layout="@layout/fragment_selection3" >
         <action
             android:id="@+id/action_selection3Fragment2_to_selection4Fragment"
-            app:destination="@id/selection4Fragment" />
+            app:destination="@id/selection4Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection10Fragment"
@@ -57,7 +61,9 @@
         tools:layout="@layout/fragment_selection10" >
         <action
             android:id="@+id/action_selection10Fragment_to_selection11Fragment"
-            app:destination="@id/selection11Fragment" />
+            app:destination="@id/selection11Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection11Fragment"
@@ -66,7 +72,9 @@
         tools:layout="@layout/fragment_selection11" >
         <action
             android:id="@+id/action_selection11Fragment_to_selection12Fragment"
-            app:destination="@id/selection12Fragment" />
+            app:destination="@id/selection12Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection12Fragment"
@@ -75,7 +83,9 @@
         tools:layout="@layout/fragment_selection12" >
         <action
             android:id="@+id/action_selection12Fragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection4Fragment"
@@ -84,7 +94,9 @@
         tools:layout="@layout/fragment_selection4" >
         <action
             android:id="@+id/action_selection4Fragment_to_selection5Fragment"
-            app:destination="@id/selection5Fragment" />
+            app:destination="@id/selection5Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection5Fragment"
@@ -93,7 +105,9 @@
         tools:layout="@layout/fragment_selection5" >
         <action
             android:id="@+id/action_selection5Fragment_to_selection6Fragment"
-            app:destination="@id/selection6Fragment" />
+            app:destination="@id/selection6Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection6Fragment"
@@ -102,7 +116,9 @@
         tools:layout="@layout/fragment_selection6" >
         <action
             android:id="@+id/action_selection6Fragment_to_selection7Fragment"
-            app:destination="@id/selection7Fragment" />
+            app:destination="@id/selection7Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection7Fragment"
@@ -111,7 +127,9 @@
         tools:layout="@layout/fragment_selection7" >
         <action
             android:id="@+id/action_selection7Fragment_to_selection8Fragment"
-            app:destination="@id/selection8Fragment" />
+            app:destination="@id/selection8Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection8Fragment"
@@ -120,7 +138,9 @@
         tools:layout="@layout/fragment_selection8" >
         <action
             android:id="@+id/action_selection8Fragment_to_selection9Fragment"
-            app:destination="@id/selection9Fragment" />
+            app:destination="@id/selection9Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/selection9Fragment"
@@ -129,6 +149,8 @@
         tools:layout="@layout/fragment_selection9" >
         <action
             android:id="@+id/action_selection9Fragment_to_selection10Fragment"
-            app:destination="@id/selection10Fragment" />
+            app:destination="@id/selection10Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
 </navigation>

@@ -15,7 +15,8 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 class CustomDialog : DialogFragment() {
-
+    
+    // id가져오기 위한 바인딩
     private var _binding: DialogLayoutBinding? = null
     private val binding get() = _binding!!
 
@@ -41,10 +42,10 @@ class CustomDialog : DialogFragment() {
         // 레이아웃 배경을 투명하게
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-        //버튼 클릭 됐을 때, 액티비티 finish
+        //확인 버튼 클릭 됐을 때, 액티비티 finish
         binding.dialBtn1.setOnClickListener {
             activity?.finishAffinity()
-            dismiss()
+            dismiss()   // 대화상자를 닫는 함수
         }
         binding.dialBtn2.setOnClickListener {
             dismiss()   // 대화상자를 닫는 함수

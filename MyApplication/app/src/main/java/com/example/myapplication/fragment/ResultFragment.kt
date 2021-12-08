@@ -8,6 +8,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import com.example.myapplication.*
+import com.example.myapplication.MainActivity.Companion.E_count
+import com.example.myapplication.MainActivity.Companion.F_count
+import com.example.myapplication.MainActivity.Companion.I_count
+import com.example.myapplication.MainActivity.Companion.J_count
+import com.example.myapplication.MainActivity.Companion.N_count
+import com.example.myapplication.MainActivity.Companion.P_count
+import com.example.myapplication.MainActivity.Companion.S_count
+import com.example.myapplication.MainActivity.Companion.T_count
 import com.example.myapplication.databinding.FragmentResultBinding
 import com.sothree.slidinguppanel.SlidingUpPanelLayout
 
@@ -40,11 +48,12 @@ class ResultFragment : Fragment() {
         mbinding = FragmentResultBinding.inflate(layoutInflater)
         val view = mbinding.root
 
-        val slidePanel = mbinding.mainFrame               // SlidingUpPanel
+        val slidePanel = mbinding.mainFrame               // 슬라이드패널
 
         // 패널 열고 닫기
         mbinding.btnToggle.setOnClickListener {
             val state = slidePanel.panelState
+
             // 닫힌 상태일 경우 열기
             if (state == SlidingUpPanelLayout.PanelState.COLLAPSED) {
                 slidePanel.panelState = SlidingUpPanelLayout.PanelState.ANCHORED
@@ -60,8 +69,6 @@ class ResultFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-
         // arguments가 null이 아니면 getInt 실행하고
         // 앨비스 연산자를 이용하여 getInt마저도 null이면 -1값을 줌
         option = arguments?.getInt("index")?:-1
@@ -165,7 +172,6 @@ class ResultFragment : Fragment() {
         }
 
     }
-
 
     companion object {
         // TODO: Rename and change types and number of parameters

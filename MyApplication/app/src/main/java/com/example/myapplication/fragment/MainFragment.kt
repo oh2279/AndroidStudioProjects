@@ -43,10 +43,10 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
+        // 바인딩 가져오기
         mBinding = FragmentMainBinding.inflate(inflater, container, false)  // binding위해 추가할 것
 
-        return binding.root /* 또한 마찬가지 */
+        return binding.root // 바인딩 위한 기본 틀
     }
     
     // 다음 fragment로 넘어가기 위한 함수 ->navigation 이용
@@ -54,7 +54,8 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view)
-
+        
+        // next버튼 클릭시 다음 페이지로
         binding.nextbtn.setOnClickListener{
             navController.navigate(R.id.action_mainFragment_to_selectionFragment)
         }

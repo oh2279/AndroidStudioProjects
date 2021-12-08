@@ -15,14 +15,10 @@ class splash_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashactivity)
 
-
+        // 잠깐 기다렸다가 시작
         Handler().postDelayed({
-            // This method will be executed once the timer is over
-            // Start your app main activity
-
             startActivity(Intent(this, MainActivity::class.java))
-
-            // close this activity
+            // close splash activity
             finish()
         }, SPLASH_TIME_OUT)
     }

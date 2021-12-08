@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.myapplication.E_count
-import com.example.myapplication.I_count
+import com.example.myapplication.MainActivity.Companion.E_count
+import com.example.myapplication.MainActivity.Companion.I_count
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentSelection3Binding
 
