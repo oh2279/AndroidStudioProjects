@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 
-// fragment가 너무 많아서 viewpager를 이용해보려 했으니
+// 12/08 fragment가 너무 많아서 viewpager를 이용해보려 했으나 (기존 프래그먼트 15개)
 // 장장 6시간 투자 후 실패하고 원래 방식으로 복귀...
+
+// 12/10 5시간 구글링 및 공부 후 뷰페이저2 성공
 class MainActivity : AppCompatActivity() {
     lateinit var navController : NavController
 
@@ -17,9 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         init() // 처음화면으로 오면 count들 초기화
 
-        // navigation사용을 위해 -> // navController가 쓰이지 않는 이유 : xml에서 activity와 fragment를 연결해줬기 때문
-        //val navHostFragment =
-        //    supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 
         //val navController = navHostFragment.navController
     }
@@ -30,7 +31,16 @@ class MainActivity : AppCompatActivity() {
         finish()
     }
 
-    // 다른 fragment에서도 사용해야하기 때문에 companion
+    fun init(){
+        E_count = 0
+        I_count = 0
+        S_count = 0
+        N_count = 0
+        T_count = 0
+        F_count = 0
+        J_count = 0
+        P_count = 0
+    }
     companion object{
         var E_count = 0
         var I_count = 0
@@ -40,16 +50,5 @@ class MainActivity : AppCompatActivity() {
         var F_count = 0
         var J_count = 0
         var P_count = 0
-
-        fun init(){
-            E_count = 0
-            I_count = 0
-            S_count = 0
-            N_count = 0
-            T_count = 0
-            F_count = 0
-            J_count = 0
-            P_count = 0
-        }
     }
 }

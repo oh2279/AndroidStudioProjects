@@ -11,10 +11,8 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_selectionFragment"
-            app:destination="@id/selectionFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/action_mainFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -22,135 +20,12 @@
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" />
     <fragment
-        android:id="@+id/selectionFragment"
-        android:name="com.example.myapplication.fragment.SelectionFragment"
-        android:label="fragment_selection"
-        tools:layout="@layout/fragment_selection" >
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.myapplication.fragment.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
         <action
-            android:id="@+id/action_selectionFragment_to_selection2Fragment2"
-            app:destination="@id/selection2Fragment2"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection2Fragment2"
-        android:name="com.example.myapplication.fragment.Selection2Fragment"
-        android:label="fragment_selection2"
-        tools:layout="@layout/fragment_selection2" >
-        <action
-            android:id="@+id/action_selection2Fragment2_to_selection3Fragment2"
-            app:destination="@id/selection3Fragment2"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection3Fragment2"
-        android:name="com.example.myapplication.fragment.Selection3Fragment"
-        android:label="fragment_selection3"
-        tools:layout="@layout/fragment_selection3" >
-        <action
-            android:id="@+id/action_selection3Fragment2_to_selection4Fragment"
-            app:destination="@id/selection4Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection10Fragment"
-        android:name="com.example.myapplication.fragment.Selection10Fragment"
-        android:label="fragment_selection10"
-        tools:layout="@layout/fragment_selection10" >
-        <action
-            android:id="@+id/action_selection10Fragment_to_selection11Fragment"
-            app:destination="@id/selection11Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection11Fragment"
-        android:name="com.example.myapplication.fragment.Selection11Fragment"
-        android:label="fragment_selection11"
-        tools:layout="@layout/fragment_selection11" >
-        <action
-            android:id="@+id/action_selection11Fragment_to_selection12Fragment"
-            app:destination="@id/selection12Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection12Fragment"
-        android:name="com.example.myapplication.fragment.Selection12Fragment"
-        android:label="fragment_selection12"
-        tools:layout="@layout/fragment_selection12" >
-        <action
-            android:id="@+id/action_selection12Fragment_to_resultFragment"
-            app:destination="@id/resultFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection4Fragment"
-        android:name="com.example.myapplication.fragment.Selection4Fragment"
-        android:label="fragment_selection4"
-        tools:layout="@layout/fragment_selection4" >
-        <action
-            android:id="@+id/action_selection4Fragment_to_selection5Fragment"
-            app:destination="@id/selection5Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection5Fragment"
-        android:name="com.example.myapplication.fragment.Selection5Fragment"
-        android:label="fragment_selection5"
-        tools:layout="@layout/fragment_selection5" >
-        <action
-            android:id="@+id/action_selection5Fragment_to_selection6Fragment"
-            app:destination="@id/selection6Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection6Fragment"
-        android:name="com.example.myapplication.fragment.Selection6Fragment"
-        android:label="fragment_selection6"
-        tools:layout="@layout/fragment_selection6" >
-        <action
-            android:id="@+id/action_selection6Fragment_to_selection7Fragment"
-            app:destination="@id/selection7Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection7Fragment"
-        android:name="com.example.myapplication.fragment.Selection7Fragment"
-        android:label="fragment_selection7"
-        tools:layout="@layout/fragment_selection7" >
-        <action
-            android:id="@+id/action_selection7Fragment_to_selection8Fragment"
-            app:destination="@id/selection8Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection8Fragment"
-        android:name="com.example.myapplication.fragment.Selection8Fragment"
-        android:label="fragment_selection8"
-        tools:layout="@layout/fragment_selection8" >
-        <action
-            android:id="@+id/action_selection8Fragment_to_selection9Fragment"
-            app:destination="@id/selection9Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/selection9Fragment"
-        android:name="com.example.myapplication.fragment.Selection9Fragment"
-        android:label="fragment_selection9"
-        tools:layout="@layout/fragment_selection9" >
-        <action
-            android:id="@+id/action_selection9Fragment_to_selection10Fragment"
-            app:destination="@id/selection10Fragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/action_viewPagerFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
     </fragment>
 </navigation>

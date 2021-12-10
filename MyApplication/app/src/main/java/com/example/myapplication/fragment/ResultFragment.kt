@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import com.example.myapplication.*
 import com.example.myapplication.MainActivity.Companion.E_count
 import com.example.myapplication.MainActivity.Companion.F_count
 import com.example.myapplication.MainActivity.Companion.I_count
@@ -16,6 +15,7 @@ import com.example.myapplication.MainActivity.Companion.N_count
 import com.example.myapplication.MainActivity.Companion.P_count
 import com.example.myapplication.MainActivity.Companion.S_count
 import com.example.myapplication.MainActivity.Companion.T_count
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentResultBinding
 import com.sothree.slidinguppanel.SlidingUpPanelLayout
 
@@ -46,7 +46,7 @@ class ResultFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
         mbinding = FragmentResultBinding.inflate(layoutInflater)
-        val view = mbinding.root
+        //val view = mbinding.root
 
         val slidePanel = mbinding.mainFrame               // 슬라이드패널
 

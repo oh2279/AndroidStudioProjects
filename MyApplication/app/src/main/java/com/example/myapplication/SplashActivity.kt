@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -16,7 +17,7 @@ class splash_activity : AppCompatActivity() {
         setContentView(R.layout.activity_splashactivity)
 
         // 잠깐 기다렸다가 시작
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             // close splash activity
             finish()

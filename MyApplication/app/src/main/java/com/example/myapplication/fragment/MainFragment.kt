@@ -57,7 +57,7 @@ class MainFragment : Fragment() {
         
         // next버튼 클릭시 다음 페이지로
         binding.nextbtn.setOnClickListener{
-            navController.navigate(R.id.action_mainFragment_to_selectionFragment)
+            navController.navigate(R.id.action_mainFragment_to_viewPagerFragment)
         }
     }
 
