@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
-import com.example.myapplication.*
-import com.example.myapplication.databinding.FragmentViewPagerBinding
 import com.example.myapplication.MainActivity.Companion.E_count
 import com.example.myapplication.MainActivity.Companion.F_count
 import com.example.myapplication.MainActivity.Companion.I_count
@@ -18,6 +16,9 @@ import com.example.myapplication.MainActivity.Companion.N_count
 import com.example.myapplication.MainActivity.Companion.P_count
 import com.example.myapplication.MainActivity.Companion.S_count
 import com.example.myapplication.MainActivity.Companion.T_count
+import com.example.myapplication.PagerRecyclerAdapter
+import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentViewPagerBinding
 
 
 private const val ARG_PARAM1 = "param1"
@@ -63,21 +64,24 @@ class ViewPagerFragment : Fragment() {
             "나는 남들과 대화할 때",
             "나는 직장이나 단체에서",
             "나는 스트레스를 받았을 때",
-            "4", "5", "6", "7", "8", "9", "10", "11", "12"
+            "내가 좋아하는 사람은?", "나는 일상적인 일을 할 때", "나 자신이 가치 있다고 느낄 때는",
+            "남을 평가하려면", "어떤 결정을 내릴 때 대게 나는", "나는 일벌레처럼 일할 때가", "정리가 안 된 방을 보면", "나는 과제나 일 등을 할 때", "전통과 관습은"
         )
         var option1 = arrayListOf<String>(
             "화제를 이것저것 바꾸며 말한다",
             "대화를 주도한다",
             "친한 사람들과 만나 떠들며 놀고 싶어한다",
-            "4", "5", "6", "7", "8", "9", "10", "11", "12"
+            "분별력 있는 사람", "일반적인 상식을 따른다", "판단력이 뛰어난 것을 확인할 때",
+            "많은 사람의 의견을 종합하는 것이 중요하다", "정해진 기준에 따른다", "자주 있다", "짜증날 때가 많다", "미리미리 한다", "중요하다"
         )
         var option2 = arrayListOf<String>(
             "한 번에 한 가지 주제로 말한다",
             "남이 먼저 말하기를 기다린다",
             "혼자서 좋아하는 것에 몰입한다",
-            "4", "5", "6", "7", "8", "9", "10", "11", "12"
+            "상상력이 풍부한 사람", "내 방식대로 한다", "상상력이 뛰어난 것을 확인할 때",
+            "사람 보는 눈을 가진 몇몇의 분석이 중요하다", "나의 느낌과 판단에 따른다", "거의 없다", "아무 생각 안든다", "미루었다 마감 전에 한다", "벗어나야 한다"
         )
-        /*binding.viewPager.run { isUserInputEnabled = false } // 슬라이드 방지*/
+        binding.viewPager.run { isUserInputEnabled = false } // 슬라이드 방지
         // RecyclerView.Adapter<ViewHolder>()
         binding.viewPager.adapter = PagerRecyclerAdapter(texts, option1, option2)
         // ViewPager의 Paging 방향은 Horizontal
